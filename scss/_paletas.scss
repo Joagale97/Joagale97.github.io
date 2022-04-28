@@ -1,0 +1,43 @@
+
+$paleta: (
+    'uno': #ffff00,
+    'dos': #ffff56,
+    'tres':#ffff81,
+    'cuatro':#78288c3a,
+    'cinco': #9544a9,
+    'seis': #e7c500,
+    'siete':#61eb05,
+  );
+
+.negro{
+	background-color: map-get($map:$paleta,$key:'seis');
+}
+
+.fondo{
+	background-color: map-get($map:$paleta,$key:'cuatro');
+}
+.fashion{
+  background: #fffc00;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grisbb{
+  background-color: #6e6b6b;
+}
+
+$tamaños: (
+    'uno':  10%,
+    'dos':  20%,
+    'tres': 30%,
+    'cuatro':40%,
+    'cinco': 50%,
+  );
+
+.honor{
+  width: map-get($map: $tamaños, $key:'cinco' );
+
+}
+
+main {
+  background-color: #525151e5; }
